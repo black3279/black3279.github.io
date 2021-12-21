@@ -1,184 +1,139 @@
-# Agency Jekyll Theme
+# jekyll-theme-leaf
 
-[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency.svg)](https://rubygems.org/gems/jekyll-agency)
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue)](/LICENSE.txt)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip_me-green?logo=paypal)](https://www.paypal.me/raviriley)
-[![template button](https://img.shields.io/badge/Generate_theme_from_template-2ea44f)][generate]
-[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
+👇👇
 
-## Preview - click for live demo
+[Preview Theme](https://supunkavinda.github.io/jekyll-theme-leaf/) 
 
-[![screenshot](/screenshot.PNG)][demo-page]
+Jekyll Theme Leaf is a very simple yet beautiful theme created by [Supun Kavinda](https://twitter.com/_SupunKavinda). It is designed for those who love dark sites.
 
-## Warning
-
-> :warning: **Notice for those using legacy Formspree contact forms:** :warning:
->
-> Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
-
-## About
-
-This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/), converted to a gem-based Jekyll theme with GitHub Pages support.
-
-While this has been done before, [here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source.
-
-I also added a lot of new features that go beyond the original theme's capabilities:
-
-- GitHub Pages support
-- [template repo][template] to get up and running in minutes
-- contact form functionality powered by [Formspree.io](https://formspree.io)
-- custom pages
-- 404 page
-- legal/Privacy Policy page
-- Google Analytics support
-- Markdown support
-- custom images
-- logo support (instead of just title text)
-- automatically updating copyright years
-- custom navigation bar, even without the header image(s)
-- customizable footer
-- custom accent color and dark/light colors
-- horizontal scrolling support for client section
-<!--
-- custom colors with automatic gradient generation (coming soon)
-- site title logo text font customization (coming soon)
-- horizontal scrolling support for portfolio section (coming soon)
-- about section (different from the timeline) -->
-
-The Jekyll structure of this theme includes:
-
-- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
-- the `page` layout allows custom pages, as seen in the legal and 404 pages
-- `sitetext.yml` enables complete customization of all site text
-- `navigation.yml` enables fully customizable navigation
-- `style.yml` enables fully customizable colors, background images, and other style-related things
-
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
-
-<div align="center">
-
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
-
-</div>
+![Screenshot](https://i.imgur.com/fBiCIuL.png)
 
 ## Installation
 
-There are three ways to install this theme:
+Add this line to your Jekyll site's `Gemfile`:
 
-1. As a gem-based theme
-2. Use the [starter template][template] (best for GitHub Pages)
-3. As a remote theme
-
-#### 1. Gem-based Theme Installation
-
-Replace the contents of your `_config.yml` file with the sample [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
-
-Install the gem with:
-
-```sh
-$ bundle add jekyll-agency
+```ruby
+gem "jekyll-theme-leaf"
 ```
 
-Or manually.
+And add this line to your Jekyll site's `_config.yml`:
 
-1. Add this line to your Jekyll site's `Gemfile`:
-   ```ruby
-   gem "jekyll-agency"
-   ```
-2. Then execute:
-   ```sh
-   $ bundle install
-   ```
-
-#### 2. Using the [Starter Template][template]
-
-This is the fastest and easiest way to get up and running on GitHub Pages.
-
-Simply generate your own repository by clicking the button below. Then replace the sample content with your own and configure for your needs.
-
-<div align="center">
-
-[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)][generate]
-
-</div>
-    
-#### 3. Remote Theme Installation
-
-Replace your `_config.yml` file with the starter [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
-
-Replace your `Gemfile` with the starter [Gemfile](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile).
-
-Then install gems.
-
-```sh
-$ bundle install
+```yaml
+theme: jekyll-theme-leaf
 ```
 
-<!--
-## Documentation and Usage
+And then execute:
 
-**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
+    $ bundle
 
-navheader is used only for the home page. nav is used everywhere else.
+Or install it yourself as:
 
-Layouts:
+    $ gem install jekyll-theme-leaf
 
-Includes:
+## Usage
 
--->
+### Layouts
+
+Refers to files within the `_layouts` directory, that define the markup for your theme.
+
+* `default.html` - The base markup of all other layouts.
+* `home.html` - Home or index page layout.
+* `page.html` - Page layout (These are not listed as posts).
+* `posts.html` - Posts layout. These are listed in the home directory.
+
+### Includes
+
+These are the files within the `_includes` directory.
+
+* `footer.html` - Markup for the footer. It's a minimal footer with the site title and twitter and github links.
+* `google-analytics.html` - Contains the [Google Analytics](https://analytics.google.com/analytics/web/) code.
+* `head.html` - Contains the HTML code for the `<head>`.
+* `header.html` - The header/top navigation bar of the site.
+* `hyvor-talk-comments.html` - [Hyvor Talk](https://talk.hyvor.com) installation code with a customized color palette.
+
+### Sass
+
+* `leaf.scss` - The main SCSS file. Contains several variables and mixins.
+* `_base.scss` - Primary styles
+* `_highlight-dark.scss` - Code highlighting
+* `_layout.scss` - Layout SCSS files
+    * `_layout_header.scss` - Styles of the header (`_includes/header.html`)
+    * `_layout_home.scss` - Styles of the home (`_layouts/home.html`)
+    * `_layout-post.scss` - Styles of the post and page layouts (`_layouts/posts.html`, `_layouts/page.html`)
+
+### Assets
+
+* `assets/css/style.css` - Imports `_sass/leaf.scss`.
+* `assets/default-icon.png` - The leaf icon.
+
+### Plugins
+
+Leaf Jekyll theme uses two plugins by default.
+
+* `jekyll-seo-tag` - For better SEO
+* `jekyll-feed` - For RSS feed
+
+## Configuration
+
+Here's the basic `_config.yml` file of this plugin.
+
+```yaml
+title: Leaf Blog
+iconURL: assets/default-icon.png
+theme: jekyll-theme-leaf
+
+permalink: :slug
+
+social:
+  twitter: YOUR_TWITTER
+  github: YOUR_GITHUB
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+### comments & analytics
+hyvor_talk_website_id: YOUR_WEBSITE_ID
+google_analytics: UA-NNNNNNNN-N
+```
+
+### Adding Comments
+
+The Leaf Jekyll theme uses [Hyvor Talk](https://talk.hyvor.com) comments. The colors are customized based for the theme therefore you don't need to customize colors in the console.
+
+* First, [login to the Hyvor Talk console](https://talk.hyvor.com/console)
+* Register your website
+* Get your website ID from the **General** section of the console.
+* Then, replace `YOUR_WEBSITE_ID` in the above code in `_config.yml` with your code.
+
+Ex: 
+
+```yaml
+hyvor_talk_website_id: 14
+```
+
+### Adding Google Analytics
+
+* Sign up to [Google Analytics](https://analytics.google.com)
+* Add your website and get the tracking ID.
+* Replace `UA-NNNNNNNN-N` with your tracking ID.
+
+Google Analytics will only appear in production.
 
 ## Contributing
 
-This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
-
-For bug reports, follow the provided template.
-
-#### Improvements - Up for Grabs
-
-- [ ] multiple language support (~~Spanish~~, Chinese, Arabic, etc.)
-- [ ] customizable background coloring for each section
-- [x] ~~custom background images~~
+Bug reports and pull requests are welcome on GitHub at https://github.com/SupunKavinda/jekyll-theme-leaf. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
-To set up your environment to develop this theme, clone this repo or your fork.
+To set up your environment to develop this theme, run `bundle install`.
 
-```sh
-$ git clone https://github.com/raviriley/agency-jekyll-theme.git
-$ cd agency-jekyll-theme
-```
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-Then run:
-
-```sh
-$ bundle install
-```
-
-To test the theme, run this. (Using the `--trace` flag for verbose errors.)
-
-```sh
-$ bundle exec jekyll serve --trace
-```
-
-Then open your browser at:
-
-- http://localhost:4000
-
-Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `leaf.gemspec` accordingly.
 
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-<!--
-
-## Example Implementations
-
-- [CV Enterprises](https://cventerprises.org)
-- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
-
--->
-
-[demo-page]: https://raviriley.github.io/agency-jekyll-theme-starter/
-[template]: https://github.com/raviriley/agency-jekyll-theme-starter
-[generate]: https://github.com/raviriley/agency-jekyll-theme-starter/generate

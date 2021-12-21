@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/support.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/sitetext.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/style.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/clients.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/modals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/navheader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/portfolio_grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_portfolio/example.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_portfolio/project1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_portfolio/project2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-10-10-welcome-to-jekyll.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/_page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/components/client-scroll.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_masthead.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_portfolio.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_services.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_team.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/layout/_timeline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/agency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/clients/creative-market.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/clients/designmodo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/clients/envato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/clients/themeforest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/contact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/04-thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/05-thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/06-thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/500x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/timeline/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/timeline/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/timeline/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/timeline/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/agency.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/contact_me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jqBootstrapValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jekyll-agency.gemspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.PNG" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="215veSPg4DgauT75KKBmsygYcdD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="" />
+      <created>1637243858050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637243858050</updated>
+      <workItem from="1637243860209" duration="830000" />
+      <workItem from="1640093244948" duration="4127000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1637244188689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637244188689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+</project>

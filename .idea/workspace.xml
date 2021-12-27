@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/_posts/2021-12-27-markdown.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/Factory리팩토링 ebb6a56b27074f5ea861da6128094b60.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/HelloWorldDecoupled a59c66aff6344942bf5933f1c53c5656.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/HelloWorldDecoupled a59c66aff6344942bf5933f1c53c5656/Untitled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/Intro 0b504a0302ba4cf79a0a42f49e7cba6a.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/버전별특징 a951a50c650149b7ba6821d02a15f429.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/스프링Annotation a935b7345a7f435c91048b42d7f1846e.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/스프링ApplicationContext b5721f9595734a7fbb2372cc22bd6c9f.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/스프링AutoWired Configuration a8d459208b6f42a2b9c5a53cc1f6f757.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/전문가를 위한 스프링 5(개정 5판) 27abef4113b84399bb9018c321f473e3/스프링ConstructorConfusion e385a07af8e34d6e9200d9e6404d9cbb.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +43,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\30133\Desktop\githubio\black3279.github.io\_posts" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -46,7 +61,9 @@
       <option name="presentableId" value="Default" />
       <updated>1637243858050</updated>
       <workItem from="1637243860209" duration="830000" />
-      <workItem from="1640093244948" duration="5073000" />
+      <workItem from="1640093244948" duration="5438000" />
+      <workItem from="1640609745249" duration="26000" />
+      <workItem from="1640609772601" duration="980000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1637244188689</created>
@@ -69,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640098607699</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <created>1640098685788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640098685788</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test">
+      <created>1640098852961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640098852961</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

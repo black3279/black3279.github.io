@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/_posts/2020-02-24-markdown.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2021-12-27-markdown.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2021-12-30-markdown.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2022-01-01-markdown.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2022-01-02-markdown.md" afterDir="false" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220101">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-01-02-markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-01-01-02-markdown.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,28 @@
       <option name="project" value="LOCAL" />
       <updated>1640098852961</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="220101">
+      <created>1641020083893</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641020083893</updated>
+    </task>
+    <task id="LOCAL-00007" summary="220101">
+      <created>1641020249292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641020249292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="220101">
+      <created>1641020342384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641020342384</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="220101" />
+    <option name="LAST_COMMIT_MESSAGE" value="220101" />
   </component>
 </project>

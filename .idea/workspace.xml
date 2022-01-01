@@ -1,35 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="211230">
-      <change afterPath="$PROJECT_DIR$/_posts/2022-01-01-markdown.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2022-01-02-markdown.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/01/Untitled 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/01/Untitled 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/01/Untitled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/02/Untitled 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/02/Untitled 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/02/Untitled 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/02/Untitled 4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/02/Untitled 5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/02/Untitled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/03/Untitled 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/03/Untitled 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/03/Untitled 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/03/Untitled 4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/03/Untitled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/04/Untitled 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/04/Untitled 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/04/Untitled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled 7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Kaggle_Overview/05/Untitled.png" afterDir="false" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220101">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-01-02-markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-01-02-markdown.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +60,7 @@
       <workItem from="1640609745249" duration="26000" />
       <workItem from="1640609772601" duration="980000" />
       <workItem from="1640874998602" duration="524000" />
-      <workItem from="1641016940094" duration="2377000" />
+      <workItem from="1641016940094" duration="2739000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1637244188689</created>
@@ -130,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640875354947</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="220101">
+      <created>1641019491480</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641019491480</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +133,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <MESSAGE value="211230" />
-    <option name="LAST_COMMIT_MESSAGE" value="211230" />
+    <MESSAGE value="220101" />
+    <option name="LAST_COMMIT_MESSAGE" value="220101" />
   </component>
 </project>

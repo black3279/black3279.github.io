@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220101">
-      <change afterPath="$PROJECT_DIR$/_posts/2022-01-06-markdown.md" afterDir="false" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220106">
+      <change afterPath="$PROJECT_DIR$/_posts/2022-01-12-markdown.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,8 @@
       <workItem from="1640609745249" duration="26000" />
       <workItem from="1640609772601" duration="980000" />
       <workItem from="1640874998602" duration="243000" />
-      <workItem from="1641475183637" duration="269000" />
+      <workItem from="1641475183637" duration="317000" />
+      <workItem from="1641996471489" duration="1432000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1637244188689</created>
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641021954919</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="220106">
+      <created>1641475473990</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641475473990</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +190,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <MESSAGE value="220101" />
-    <option name="LAST_COMMIT_MESSAGE" value="220101" />
+    <MESSAGE value="220106" />
+    <option name="LAST_COMMIT_MESSAGE" value="220106" />
   </component>
 </project>

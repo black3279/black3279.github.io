@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220131">
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220202">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2022-01-31-aws.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-01-31-aws.md" afterDir="false" />
     </list>
@@ -62,7 +62,8 @@
       <workItem from="1642084409084" duration="1771000" />
       <workItem from="1642087004745" duration="621000" />
       <workItem from="1643591460699" duration="1832000" />
-      <workItem from="1643732612823" duration="4445000" />
+      <workItem from="1643732612823" duration="4481000" />
+      <workItem from="1643801923743" duration="1980000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1637244188689</created>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643593621830</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="220202">
+      <created>1643737150945</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643737150945</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +249,7 @@
     <MESSAGE value="220113" />
     <MESSAGE value="220114" />
     <MESSAGE value="220131" />
-    <option name="LAST_COMMIT_MESSAGE" value="220131" />
+    <MESSAGE value="220202" />
+    <option name="LAST_COMMIT_MESSAGE" value="220202" />
   </component>
 </project>

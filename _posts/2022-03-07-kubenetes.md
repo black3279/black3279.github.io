@@ -18,10 +18,12 @@ kubectl run echo --image=gcr.io/google_containers/echoserver:1.8 --port=8080
 <br/>![Untitled](/assets/img/Kubenetes/img02.PNG)<br/>
 - 다음으로 에코 서버에 접근할 수 있도록 로컬 컴퓨터로 포트포워딩을 해보자.
 > 포트포워딩 이란 ?
-포트 포워딩이란 컴퓨터 네트워크에서 패킷이 라우터나 방화벽 같은 네트워크 게이트웨이를 통과하는 동안 네트워크 주소를 변환해주는 것을 의미한다. 쉽게 말해 외부에서 접속이 가능하도록 하는 것이다.
-<br/>![Untitled](/assets/img/Kubenetes/img03.PNG)<br/>
-### 결과확인
-```
+> 포트 포워딩이란 컴퓨터 네트워크에서 패킷이 라우터나 방화벽 같은 네트워크 게이트웨이를 통과하는 동안 네트워크 주소를 변환해주는 것을 의미한다. 쉽게 말해 외부에서 접속이 가능하도록 하는 것이다.
+> <br/>![Untitled](/assets/img/Kubenetes/img03.PNG)<br/>
+<br/>
+### 결과확인<br/>
+
+```dockerfile
 Hostname: echo
 
 Pod Information:

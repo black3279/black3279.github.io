@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220308">
+      <change afterPath="$PROJECT_DIR$/_posts/2022-03-07-kubenetes.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-02-24-markdown.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-02-25-welcome-to-jekyll.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-12-25-markdown.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <workItem from="1644712021944" duration="3244000" />
       <workItem from="1644759705030" duration="3050000" />
       <workItem from="1646060475617" duration="733000" />
-      <workItem from="1646746723946" duration="472000" />
+      <workItem from="1646746723946" duration="702000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1637244188689</created>
@@ -321,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646746905503</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="220308">
+      <created>1646747217212</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1646747217212</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

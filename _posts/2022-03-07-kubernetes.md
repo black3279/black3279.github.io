@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bruce Lee
-title: Kubenetes
+title: Kubernetes
 ---
 👨‍🎓 쿠버네티스 입문 !
 

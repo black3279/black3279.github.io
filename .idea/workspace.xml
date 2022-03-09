@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220309" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220309">
+      <change beforePath="$PROJECT_DIR$/_posts/2022-03-07-kubernetes.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-03-07-kubernetes.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +76,7 @@
       <workItem from="1646760882844" duration="99000" />
       <workItem from="1646803695053" duration="1285000" />
       <workItem from="1646805029176" duration="1801000" />
+      <workItem from="1646807084809" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1637244188689</created>
@@ -390,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646806824588</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="220309">
+      <created>1646807126166</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1646807126166</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

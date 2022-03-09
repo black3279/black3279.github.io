@@ -194,3 +194,9 @@ kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   81m
 ```
 <br/>
 - 정상 삭제된 것을 확인할 수 있다.
+<br/><br/>
+
+## Sample 코드를 분석하여 보자
+- https://github.com/dockersamples/example-voting-app
+<br/><br/>
+![Untitled](https://github.com/dockersamples/example-voting-app/raw/master/architecture.png)

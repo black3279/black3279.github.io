@@ -205,6 +205,7 @@ kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   81m
 ![Untitled](https://github.com/dockersamples/example-voting-app/raw/master/architecture.png)
 
 - db-deployment.yaml
+<br/>
 ```dockerfile
 apiVersion: apps/v1
 kind: Deployment
@@ -241,8 +242,10 @@ spec:
       - name: db-data
         emptyDir: {} 
 ```
-
+<br/>
 - db-service.yaml
+<br/>
+
 ```dockerfile
 apiVersion: v1
 kind: Service
@@ -260,8 +263,10 @@ spec:
   selector:
     app: db
 ```
-
+<br/>
 - result-deployment.yaml
+<br/>
+
 ```dockerfile
 apiVersion: apps/v1
 kind: Deployment
@@ -287,8 +292,10 @@ spec:
         - containerPort: 80
           name: result
 ```
-
+<br/>
 - db-deployment.yaml
+<br/>
+
 ```dockerfile
 apiVersion: v1
 kind: Service

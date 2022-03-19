@@ -314,3 +314,35 @@ spec:
   selector:
     app: result
 ```
+<br/>
+<br/>
+
+## PR 중 db-deployment.yaml 파일
+<br/>
+
+```dockerfile
+        - name: POSTGRES_HOST_AUTH_METHOD
+            value: trust
+```
+
+<br/>
+<br/>
+
+## server.js 수정사항
+<br/>
+
+```dockerfile
+function getVotes(client) {
+console.log("!!!!!!!!!! here")
+client.query('SELECT vote, COUNT(id) AS count FROM votes GROUP BY vote', [], function(err, result) {
+if (err) {
+console.error("Error performing query: " + err);
+} else {
+var votes = collectVotesFromResult(result);
+io.sockets.emit("scores", JSON.stringify(votes));
+}
+
+    setTimeout(function() {getVotes(client) }, 1000);
+});
+}
+```

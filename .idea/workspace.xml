@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220319">
+      <change afterPath="$PROJECT_DIR$/_posts/2022-04-21-kubernetesArchitecture.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-03-07-kubernetes.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-03-07-kubernetes.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +80,8 @@
       <workItem from="1646807084809" duration="596000" />
       <workItem from="1647180184598" duration="700000" />
       <workItem from="1647353019360" duration="971000" />
-      <workItem from="1647695179536" duration="1386000" />
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1640098343683</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640098343683</updated>
+      <workItem from="1647695179536" duration="1623000" />
+      <workItem from="1650495527386" duration="1997000" />
     </task>
     <task id="LOCAL-00003" summary="test">
       <created>1640098607699</created>
@@ -425,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647354755986</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="220319">
+      <created>1647697573099</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1647697573100</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

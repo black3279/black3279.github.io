@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220421" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220421">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-04-21-kubernetesArchitecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-04-21-kubernetesArchitecture.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,14 +81,8 @@
       <workItem from="1647180184598" duration="700000" />
       <workItem from="1647353019360" duration="971000" />
       <workItem from="1647695179536" duration="1623000" />
-      <workItem from="1650495527386" duration="2965000" />
-    </task>
-    <task id="LOCAL-00004" summary="test">
-      <created>1640098685788</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1640098685788</updated>
+      <workItem from="1650495527386" duration="3734000" />
+      <workItem from="1650761770971" duration="21000" />
     </task>
     <task id="LOCAL-00005" summary="test">
       <created>1640098852961</created>
@@ -423,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650498939088</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="220421">
+      <created>1650499425490</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1650499425490</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

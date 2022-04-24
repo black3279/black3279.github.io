@@ -6,7 +6,7 @@ title: Kubernetes 아키텍쳐 및 동작원리 1
 
 👨‍🎓 쿠버네티스 아키텍쳐
 
-쿠버네티스는 클러스터에는 Control Plane과 workker node 가 있다.<br/><br/>
+쿠버네티스는 클러스터에는 Control Plane과 worker node 가 있다.<br/><br/>
 (1) 컨트롤 플레인 (마스터 노드)
 마스터 노드는 클러스터를 통제하고 관리하는 쿠버네티스의 중심부이며 아래와 같은 구성요소가 있다.<br/><br/>
 
@@ -41,7 +41,7 @@ Controller Manager의 요소들은 선언된 API에 맞게 쿠버네티스 resou
 (3) etcd를 감시하던 controller 동작<br/>
 : controller는 etcd에 내가 담당하고있는 resource가 들어왔는지를 감시하다가 etcd에 자신의 역할에 맞는 내용이 저장되어있다면 스케줄러에게 동작을 요청한다. 쿠버네티스의 비즈니스 로직은 controller에 숨어있다.<br/>
 (4) 스케줄러 동작<br/>
-: 스케줄러는 워커노드의 kubelet과 통신한다.<br/><
+: 스케줄러는 워커노드의 kubelet과 통신한다.<br/>
 (5) kubelet 동작<br/>
 : kubelet은 노드에 pod 등을 생성합니다.<br/>
 
@@ -193,18 +193,18 @@ $ kubectl logs mypod<br/>
 <br/>
 
 (5) pod 컨테이너에 직접 접근해 curl 명령어로 확인하기<br/>
-# pod의 컨테이너에 접근한다.<br/>
+### pod의 컨테이너에 접근한다.<br/>
 $ kubectl exec mypod -it -- sh<br/>
-# pod에 접근했다면 curl 명령어로 웹 애플리케이션이 동작하는지 확인한다.<br/>
+### pod에 접근했다면 curl 명령어로 웹 애플리케이션이 동작하는지 확인한다.<br/>
 $ curl get -x 127.0.0.1:8080<br/>
-# response로 hello world 를 내려주는것을 확인한다.<br/>
+### response로 hello world 를 내려주는것을 확인한다.<br/>
 8080포트 "/" 에 hello world를 내려주도록 했으므로 확인한다.<br/>
 <br/>
 쿠버네티스 service라는 리소스를 공부하기 이전이므로 브라우저에서는 접근할 수 없다.<br/>
 pod안에 접속해 http request를 보내 확인한다.<br/>
 
 4. pod를 삭제하기<br/>
-## 이름으로 삭제한다.<br/>
+### 이름으로 삭제한다.<br/>
 $ kubectl delete pod mypod<br/>
 ### 연습용 pod를 많이 생성했다면 모두 삭제한다.<br/>
 ### 네임스페이스를 지정한적이 없으므로 모든 resource는 default 네임스페이스에 올라간다.<br/>

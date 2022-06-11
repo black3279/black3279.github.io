@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220424">
-      <change afterPath="$PROJECT_DIR$/_posts/2022-06-11-kubernetesReplicaSet.md" afterDir="false" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220611">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-06-11-kubernetesReplicaSet.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-06-11-kubernetesReplicaSet.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,14 +83,7 @@
       <workItem from="1647695179536" duration="1623000" />
       <workItem from="1650495527386" duration="3734000" />
       <workItem from="1650761770971" duration="694000" />
-      <workItem from="1654947841894" duration="1876000" />
-    </task>
-    <task id="LOCAL-00006" summary="220101">
-      <created>1641020083893</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1641020083893</updated>
+      <workItem from="1654947841894" duration="4085000" />
     </task>
     <task id="LOCAL-00007" summary="220101">
       <created>1641020249292</created>
@@ -428,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650761840671</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="220611">
+      <created>1654949978881</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1654949978881</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,6 +479,7 @@
     <MESSAGE value="220319" />
     <MESSAGE value="220421" />
     <MESSAGE value="220424" />
-    <option name="LAST_COMMIT_MESSAGE" value="220424" />
+    <MESSAGE value="220611" />
+    <option name="LAST_COMMIT_MESSAGE" value="220611" />
   </component>
 </project>

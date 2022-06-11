@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bruce Lee
-title: Kubernetes 레플리카셋
+title: Kubernetes 레플리카셋과 디플로이먼트
 ---
 
 👨‍🎓 레플리카셋이란?
@@ -130,3 +130,132 @@ NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE<br/>
 service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   8d<br/>
 replicaset을 지우면 pod도 같이 사라지는걸 확인할 수 있다.<br/>
 
+👨‍🎓 deployment
+###1. **디플로이먼트**
+<br/>deployment가 등장하기 이전 레플리케이션 컨트롤러만 이용하는 경우
+<br/>컨테이너에 들어가는 애플리케이션의 소스가 변경된경우 다시 레플리케이션 컨트롤러를 새로 만들고 rolling-update 를 수행했다.
+<br/>
+> 참고) 롤링 업데이트는 파드 인스턴스를 점진적으로 새로운 것으로 업데이트하여 디플로이먼트 업데이트가 서비스 중단 없이 이루어질 수 있도록 해준다.
+<br/> https://kubernetes.io/ko/docs/tutorials/kubernetes-basics/update/update-intro/
+<br/><br/>
+
+그러나 deployment가 등장하며 pod의 컨테이너의 이미지만 변경해주면 편리하게 업데이트가 되며
+<br/>히스토리 확인 및 롤백기능까지 사용할 수 있게 되었다.
+<br/>
+###2. **yaml파일을 이용해 생성하기**
+<br/>apiVersion: apps/v1
+<br/>kind: Deployment
+<br/>metadata:
+<br/>  name: mydeploy
+<br/>spec:
+<br/>  replicas: 3
+<br/>  selector:
+<br/>    matchLabels:
+<br/>      app: myHelloWorld
+<br/>  template:
+<br/>    metadata:
+<br/>      labels:
+<br/>        app: myHelloWorld
+<br/>    spec:
+<br/>      containers:
+<br/>      - name: myapp
+<br/>        image: repo/helloworld:1
+<br/>deployment의 yaml파일은 저번 게시글의 replicaset과 kind빼고는 모두 똑같다.
+<br/>
+<br/>3. 동작확인
+<br/>$ kubectl apply -f deployment1.yaml --record
+<br/>deployment.apps/mydeploy created
+<br/>yaml파일을 적용해 deployment를 생성한다.
+<br/>deployment는 --record를 적용해줍니다.(추후 히스토리 확인용)
+<br/>
+<br/>$ kubectl get all
+<br/>NAME                            READY   STATUS    RESTARTS   AGE
+<br/>pod/mydeploy-5bd587868d-8442c   1/1     Running   0          85s
+<br/>pod/mydeploy-5bd587868d-dgknp   1/1     Running   0          85s
+<br/>pod/mydeploy-5bd587868d-txg9s   1/1     Running   0          85s
+<br/>
+<br/>NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+<br/>service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   8d
+<br/>
+<br/>NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+<br/>deployment.apps/mydeploy   3/3     3            3           85s
+<br/>
+<br/>NAME                                  DESIRED   CURRENT   READY   AGE
+<br/>replicaset.apps/mydeploy-5bd587868d   3         3         3       85s
+<br/>kubectl get all로 모두 확인해보니 여러 resource들이 올라와있다.
+<br/>deployment는 replicaset을 생성하고
+<br/>replicaset은 pod을 생성하여 생긴 결과이다.
+<br/>
+<br/>
+### 4. **이미지 업데이트하기**
+<pre>
+<br/>@RestController
+<br/>public class DemoController {
+<br/>    @GetMapping("/")
+<br/>    public String test() {
+<br/>        return "hello new world";
+<br/>    }
+<br/>}
+</pre>
+<br/>hello world에서 hello new world를 리턴해주는 웹 애플리케이션으로 이미지가 업데이트 된 경우이다.
+<br/>helloworld:2에 이미지를 올려주고 deployment yaml파일에 가서
+<br/>
+<br/>apiVersion: apps/v1
+<br/>kind: Deployment
+<br/>metadata:
+<br/>  name: mydeploy
+<br/>spec:
+<br/>  replicas: 3
+<br/>  selector:
+<br/>    matchLabels:
+<br/>      app: myHelloWorld
+<br/>  template:
+<br/>    metadata:
+<br/>      labels:
+<br/>        app: myHelloWorld
+<br/>    spec:
+<br/>      containers:
+<br/>      - name: myapp
+<br/>        image: repo/helloworld:2
+<br/>        # pod의 image만 변경
+<br/>image에 태그만 변경해 주고 apply 한다.
+<br/>$ kubectl apply -f deployment2.yaml --record
+<br/>deployment.apps/mydeploy configured
+<br/>deployment는 --record 를 붙여줘야 history에서 확인이 가능하다.
+<br/>
+<br/>
+### 5. **deployment rollout 이용하기**
+<br/>$ kubectl rollout status deployment mydeploy
+<br/>deployment "mydeploy" successfully rolled out
+<br/>먼저 rollout status 를 확인한다.
+<br/>rollout은 여러개의 pod를 모두 죽이지않고 순차적으로 업데이트하는 방식을 말한다.
+<br/>
+<br/>$ kubectl rollout history deployment mydeploy
+<br/>REVISION  CHANGE-CAUSE
+<br/>2         kubectl.exe apply --filename=mydeployment.yaml --record=true
+<br/>3         kubectl.exe apply --filename=mydeployment.yaml --record=true
+<br/>--record 옵션을 붙여서 apply 한 deployment의 경우 revision이 찍힌다.
+<br/>Revision 번호를 확인했으면 해당 revision을 확인해본다.
+<br/>
+<br/>$ kubectl rollout history deployment mydeploy --revision=2
+<br/>deployment.apps/mydeploy with revision #2
+<br/>Pod Template:
+<br/>  Labels:       app=myHelloWorld
+<br/>        pod-template-hash=5bd587868d
+<br/>  Annotations:  kubernetes.io/change-cause: kubectl.exe apply --filename=mydeployment.yaml --record=true
+<br/>  Containers:
+<br/>   myapp:
+<br/>    Image:      repo/helloworld:1
+<br/>    Port:       <none>
+<br/>    Host Port:  <none>
+<br/>    Environment:        <none>
+<br/>    Mounts:     <none>
+<br/>  Volumes:      <none>
+<br/>이전 버전이므로 revision3의 이미지태그가 1인걸 확인할 수 있다.
+<br/>
+<br/>해당 이미지로 롤백하고싶다면
+<br/>yaml파일을 수정해서 다시 apply해도 되지만, 변경된부분이 많다면 rollout undo명령어를 활용해도 된다.
+<br/>
+<br/>$ kubectl rollout undo deployment mydeploy --to-revision=1
+<br/>deployment.apps/mydeploy rolled back
+<br/>pod, replicaset, deployment를 알면 컨테이너를 생성, 복제, 유지하고 히스토리를 확인해서 롤백할 수 있다.

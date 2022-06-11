@@ -148,7 +148,7 @@ service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   8d<br/>
 - replicaset을 지우면 pod도 같이 사라지는걸 확인할 수 있다.<br/>
 
 # 👨‍🎓 deployment
-##1. **디플로이먼트**
+## 1. **디플로이먼트**
 <br/>deployment가 등장하기 이전 레플리케이션 컨트롤러만 이용하는 경우
 <br/>컨테이너에 들어가는 애플리케이션의 소스가 변경된경우 다시 레플리케이션 컨트롤러를 새로 만들고 rolling-update 를 수행했다.
 <br/>
@@ -159,7 +159,7 @@ service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   8d<br/>
 그러나 deployment가 등장하며 pod의 컨테이너의 이미지만 변경해주면 편리하게 업데이트가 되며
 <br/>히스토리 확인 및 롤백기능까지 사용할 수 있게 되었다.
 <br/>
-##2. **yaml파일을 이용해 생성하기**
+## 2. **yaml파일을 이용해 생성하기**
 <br/>
 
 > apiVersion: apps/v1

@@ -28,23 +28,23 @@ yaml파일에서 이 세가지를 확인할 수 있다.
 
 ## 4. **replicaset.yaml**
 <br/>
-<pre>   apiVersion: apps/v1<br/>
-   kind: ReplicaSet<br/>
-   metadata:<br/>
-    name: myrs<br/>
-   spec:<br/>
-       replicas: 3<br/>
-       selector:<br/>
-           matchLabels:<br/>
-               app: myHelloWorld<br/>
-       template:<br/>
-           metadata:<br/>
-               labels:<br/>
-                   app: myHelloWorld<br/>
-       spec:<br/>
-           containers:<br/>
-            - name: myapp<br/>
-              image: repo/helloworld:1<br/>
+<pre>   apiVersion: apps/v1
+   kind: ReplicaSet
+   metadata:
+    name: myrs
+   spec:
+       replicas: 3
+       selector:
+           matchLabels:
+               app: myHelloWorld
+       template:
+           metadata:
+               labels:
+                   app: myHelloWorld
+       spec:
+           containers:
+            - name: myapp
+              image: repo/helloworld:1
 </pre>
 <br/><br/>
 <br/>
@@ -216,13 +216,13 @@ service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   8d<br/>
 
 ## 4. **이미지 업데이트하기**
 <pre>
-<br/>@RestController
-<br/>public class DemoController {
-<br/>    @GetMapping("/")
-<br/>    public String test() {
-<br/>        return "hello new world";
-<br/>    }
-<br/>}
+@RestController
+public class DemoController {
+    @GetMapping("/")
+    public String test() {
+        return "hello new world";
+    }
+}
 </pre>
 <br/>
 

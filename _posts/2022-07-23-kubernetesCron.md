@@ -8,7 +8,7 @@ title: Kubernetes 크론
 - 리눅스 crontab(작업 예약 스케줄러) 쿠버네티스 버전이다.<br/>
 -  백업, 소나큐브 분석, 이메일 전송 등 정기적이고 반복적인 작업을 하는데 쓰인다.<br/>
 <br/>
-###2. 사용법 <br/>
+### 2. 사용법 <br/>
 (1). mycj.yaml<br/>
 <br/>
 > apiVersion: batch/v1<br/>

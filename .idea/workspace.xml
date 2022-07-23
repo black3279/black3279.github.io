@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220611">
+      <change afterPath="$PROJECT_DIR$/_posts/2022-07-20-kubernetesService.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-06-11-kubernetesReplicaSet.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-06-11-kubernetesReplicaSet.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,21 +83,9 @@
       <workItem from="1647695179536" duration="1623000" />
       <workItem from="1650495527386" duration="3734000" />
       <workItem from="1650761770971" duration="694000" />
-      <workItem from="1654947841894" duration="5512000" />
-    </task>
-    <task id="LOCAL-00009" summary="220101">
-      <created>1641020525320</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1641020525320</updated>
-    </task>
-    <task id="LOCAL-00010" summary="220101">
-      <created>1641021210384</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1641021210384</updated>
+      <workItem from="1654947841894" duration="6089000" />
+      <workItem from="1656477056193" duration="501000" />
+      <workItem from="1658584503794" duration="806000" />
     </task>
     <task id="LOCAL-00011" summary="220101">
       <created>1641021420561</created>
@@ -428,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654954103692</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="220611">
+      <created>1654954269269</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1654954269269</updated>
+    </task>
+    <task id="LOCAL-00059" summary="220611">
+      <created>1654954378677</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1654954378677</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

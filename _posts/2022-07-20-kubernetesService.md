@@ -56,22 +56,20 @@ ports:<br/>
 
 ## 4. service 생성 확인<br/>
 
-<pre>
-<code>
-$ kubectl get svc
+
+> $ kubectl get svc
    NAME          TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
    kubernetes    ClusterIP   10.96.0.1        <none>        443/TCP   15m
    myclusterip   ClusterIP   10.102.217.210   <none>        80/TCP    11m
 
-* myclusterip가 생성된걸 확인할 수 있다.
+<br/>* myclusterip가 생성된걸 확인할 수 있다.<br/>
 
-$ kubectl get pod -o wide
+> $ kubectl get pod -o wide
 NAME                       READY   STATUS    RESTARTS   AGE     IP           NODE       NOMINATED NODE   READINESS GATES
 mydeploy-599887685-hc9tn   1/1     Running   0          2m14s   172.17.0.3   minikube   <none>           <none>
 mydeploy-599887685-kqk4n   1/1     Running   0          2m14s   172.17.0.2   minikube   <none>           <none>
-</code>
-</pre>
 
+<br/>
 - kubectl get pod -o wide 명령어를 통해 pod의 ip를 확인할수 있지만 해당 ip는 pod이 죽고 다시 생성되면 변하므로 단순히 테스트하는경우에만 사용한다. pod ip(172.17.0.2 or 172.17.0.3)의 8080은<br/>
 <br/>
 service(clusterip)의 ip(10.102.217.210)의 80번으로 연결되게 된다.<br/>

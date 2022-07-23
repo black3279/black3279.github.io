@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220723">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-07-20-kubernetesService.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-07-20-kubernetesService.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +85,7 @@
       <workItem from="1650761770971" duration="694000" />
       <workItem from="1654947841894" duration="6089000" />
       <workItem from="1656477056193" duration="501000" />
-      <workItem from="1658584503794" duration="1735000" />
-    </task>
-    <task id="LOCAL-00012" summary="220101">
-      <created>1641021714766</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1641021714766</updated>
+      <workItem from="1658584503794" duration="3069000" />
     </task>
     <task id="LOCAL-00013" summary="220101">
       <created>1641021954919</created>
@@ -429,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658585617797</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="220723">
+      <created>1658586561361</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1658586561361</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

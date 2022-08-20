@@ -23,21 +23,22 @@ title: Better JavaScript with ESlint, Airbnb, Husky & Lint staged
 - 에어비앤비 스타일 가이드는 무엇일까? 에어비앤비 스타일 가이드는 좋은 코드를 작성하기 위한 가이드라인과 몇 가지 일반적인 모범 사례이다. Airbnb 스타일 가이드는 Github에서 가장 주목받는 스타일 가이드 중 하나이다. 참고: eslint-config-airbnb-base에는 React 에 대한 린트 규칙이 제공되지 않습니다. React 에 대한 규칙을 원하는 경우 eslint-config-airbnb 사용을 고려한다.<br/>
 - Airbnb ESLint에는 eslint-config-airbnb와 eslint-config-airbnb-base가 있는데 base는 리액트 관련 규칙을 포함하지 않는 것이다. base로 설치하려면 아래 명령어에서 airbnb 뒤에 -base 를 붙인다.<br/>
   <br/>
+
 ```javascript
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  extends: ["airbnb-base", "prettier"],
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: "module",
-  },
-  plugins: ["prettier"],
-  rules: {
-    "prettier/prettier": "error",
-  },
+      env: {
+        browser: true,
+        es2021: true,
+      },
+      extends: ["airbnb-base", "prettier"],
+      parserOptions: {
+        ecmaVersion: 12,
+        sourceType: "module",
+      },
+      plugins: ["prettier"],
+      rules: {
+        "prettier/prettier": "error",
+      }
 };
 ```
 <br/>
@@ -92,6 +93,7 @@ husky는 gut hooks를 통해서 commit이나 push 전에 행동을 도와준다.
 <br/>
 npm install husky --save-dev<br/>
 // package.json<br/>
+
 ```javascript
 "husky": {
     "hooks": {
@@ -106,8 +108,8 @@ npm install husky --save-dev<br/>
 각 npm 모듈들을 설치 후 npm install --save-dev lint-staged@next husky<br/>
 <br/>
 packae.json에 husky 설정과 lint-staged 설정을 다음과 같이 추가해준다.<br/>
-<pre>
-<code>
+
+```javascript
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -120,8 +122,8 @@ packae.json에 husky 설정과 lint-staged 설정을 다음과 같이 추가해�
             "git add"
         ]
     }
-</code>
-</pre>
+```
+<br/>
 commit 을 했을 때<br/>
 <br/>
 [eslint—fix, prettier—write]를 문제 없이 통과해야 commit을 할 수 있게 된다.<br/>

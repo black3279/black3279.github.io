@@ -53,10 +53,15 @@ module.exports = {
 <br/>
 
 ### 3. husky, lint-staged 의 Git hook 을 이용한 ESlint 자동화 <br/><br/>
-1. husky? lint-stage?<br/>
-   우리는 ESLint를 프로젝트에 적용시킬 때는 협업하는 모든 사람들이 같은 규칙 내에서 코딩을 하는 것을 예상한다. 하지만 가끔은 규칙을 지키지 않고 깃헙에 코드를 푸시할 때가 생긴다. 많은 사람들의 경우에도 가끔 오랜 코딩에 지쳐서 깜빡하고 ESLint 확인을 안하고 푸시할 때가 있었다.<br/>
-   그래서 우리는 git commit 또는 git push와 같은 git 이벤트가 일어나기 전에 우리가 원하는 스크립트를 실행하기 위해서 git 이벤트 사이에 갈고리(hook)를 걸어주는 것이다. 이것을 git hook 제어라고 한다. 우리는 이런 git hook 제어를 위해서 husky 라이브러리를 사용할 것이다.<br/>
-   그러면 lint-staged는 뭐냐? 우선 stage 상태를 이해해야한다. 파일들이 git add로 커밋 대상이 된 상태를 stage 상태라고 한다. stage 상태의 git 파일에 대해 lint와 우리가 설정해둔 명령어를 실행해주는 라이브러리다.<br/>
+#### 1) husky? lint-stage?<br/>
+>   우리는 ESLint를 프로젝트에 적용시킬 때는 협업하는 모든 사람들이 같은 규칙 내에서 코딩을 하는 것을 예상한다. 하지만 가끔은 규칙을 지키지 않고 깃헙에 코드를 푸시할 때가 생긴다.<br/>
+많은 사람들의 경우에도 가끔 오랜 코딩에 지쳐서 깜빡하고 ESLint 확인을 안하고 푸시할 때가 있었다.<br/>
+그래서 우리는 git commit 또는 git push와 같은 git 이벤트가 일어나기 전에 우리가 원하는 스크립트를 실행하기 위해서 git 이벤트 사이에 갈고리(hook)를 걸어주는 것이다.<br/>
+이것을 git hook 제어라고 한다. 우리는 이런 git hook 제어를 위해서 husky 라이브러리를 사용할 것이다.<br/>
+그러면 lint-staged는 뭐냐? 우선 stage 상태를 이해해야한다. 파일들이 git add로 커밋 대상이 된 상태를 stage 상태라고 한다.<br/>
+stage 상태의 git 파일에 대해 lint와 우리가 설정해둔 명령어를 실행해주는 라이브러리다.<br/>
+
+<br/>
 - 프로그래밍에서 hook이란 특정 이벤트 또는 함수가 호출되기 전/후에 호출이 되는 코드를 의미한다.<br/>
 - Git은 특정 상황에 특정 스크립트를 실행할 수 있도록 하는 Hook이라는 기능을 지원하고 있다. 별도로 설치할 것은 없고 모든 git repository에서 지원한다. git으로 관리하고 있는 폴더에서 cd .git/hooks/ 명령어를 치고 ls 명령어를 쳐보면 .sample 확장자로 되어있는 파일이 13개가 있다. 이는 git hook이 지원하는 특정 상황이 13개인 것을 알 수 있다. 해당 hook을 사용하려면 .sample 확장자만 지우면 된다.<br/>
 - 이번에 사용해볼 git hook은 pre-commit이다.<br/>
@@ -69,7 +74,7 @@ module.exports = {
 #### 정리<br/>
 **Lint-Staged**<br/>
 <br/>
-공식 repo에 가보면 한 줄소개로 어떤 역할을 하는 라이브러리로 볼 수 있다.<br/>
+공식 repo에 가보면 한줄소개로 어떤 역할을 하는 라이브러리로 볼 수 있다.<br/>
 <br/>
 Run linters against staged git files and don't let 💩 slip into your code base!<br/>
 <br/>
@@ -82,42 +87,48 @@ npm install --save-dev lint-staged@next<br/>
 # Husky<br/>
 githooks 를 npm 을 통해서 관리할 수 있게 도와주는 라이브러리 이다.<br/>
 <br/>
-대응되는 npm script를 pacakge.json에서 매칭시켜서 아래 예시와 같이 쉽게 적용할 수 있게 도와준다.<br/>
-<br/>
-typicode/husky<br/>
+대응되는 npm script를 pacakge.json에서 매칭시켜서 쉽게 적용할 수 있게 도와준다.<br/>
 <br/>
 # Lint-Staged & Husky 적용<br/>
 husky는 gut hooks를 통해서 commit이나 push 전에 행동을 도와준다.<br/>
 <br/>
 npm install husky --save-dev<br/>
 // package.json<br/>
-"husky": {<br/>
-"hooks": {<br/>
-"pre-commit": "npm test",<br/>
-"pre-push": "npm test",<br/>
-"...": "..."<br/>
-}<br/>
-}<br/>
-그러면 이 두가지를 앞서 설정한 부분과 함께 적용해보겠다. 각 npm 모듈들을 설치 후 npm install --save-dev lint-staged@next husky<br/>
+<pre>
+<code>
+"husky": {
+    "hooks": {
+        "pre-commit": "npm test",
+        "pre-push": "npm test",
+        "...": "..."
+    }
+}
+</code>
+</pre>
+그러면 이 두가지를 앞서 설정한 부분과 함께 적용해보겠다.<br/>
+각 npm 모듈들을 설치 후 npm install --save-dev lint-staged@next husky<br/>
 <br/>
 packae.json에 husky 설정과 lint-staged 설정을 다음과 같이 추가해준다.<br/>
-<br/>
-    "husky": {<br/>
-        "hooks": {<br/>
-            "pre-commit": "lint-staged"<br/>
-        }<br/>
-    },<br/>
-    "lint-staged": {<br/>
-        "*.{js,vue}": [<br/>
-            "eslint --fix",<br/>
-            "prettier --write",<br/>
-            "git add"<br/>
-        ]<br/>
-    }<br/>
+<pre>
+<code>
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,vue}": [
+            "eslint --fix",
+            "prettier --write",
+            "git add"
+        ]
+    }
+</code>
+</pre>
 commit 을 했을 때<br/>
 <br/>
 [eslint—fix, prettier—write]를 문제 없이 통과해야 commit을 할 수 있게 된다.<br/>
 <br/>
-다시 정리하면<br/>
-staging에 있는 파일을 npm 으로 다루기 위해서 → lint-staged<br/>
-git hooks를 npm으로 다루기 위해서 → husky 를 이용한다. 이 두가지를 조합해서 commit 하기 전에 파일들을 lint 룰이 적용된 파일만 커밋할 수 있게 도와준다.
+## 다시 정리하면<br/>
+- staging에 있는 파일을 npm 으로 다루기 위해서 → lint-staged<br/>
+- git hooks를 npm으로 다루기 위해서 → husky 를 이용한다. 이 두가지를 조합해서 commit 하기 전에 파일들을 lint 룰이 적용된 파일만 커밋할 수 있게 도와준다.

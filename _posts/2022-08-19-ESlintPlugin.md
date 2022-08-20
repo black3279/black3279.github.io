@@ -71,8 +71,8 @@ stage 상태의 git 파일에 대해 lint와 우리가 설정해둔 명령어를
 - git repo : https://github.com/okonet/lint-staged / https://github.com/typicode/husky<br/>
 <br/>
 
-#### 정리<br/>
-**Lint-Staged**<br/>
+# 정리<br/>
+# Lint-Staged<br/>
 <br/>
 공식 repo에 가보면 한줄소개로 어떤 역할을 하는 라이브러리로 볼 수 있다.<br/>
 <br/>
@@ -129,6 +129,7 @@ commit 을 했을 때<br/>
 <br/>
 [eslint—fix, prettier—write]를 문제 없이 통과해야 commit을 할 수 있게 된다.<br/>
 <br/>
-## 다시 정리하면<br/>
-- staging에 있는 파일을 npm 으로 다루기 위해서 → lint-staged<br/>
-- git hooks를 npm으로 다루기 위해서 → husky 를 이용한다. 이 두가지를 조합해서 commit 하기 전에 파일들을 lint 룰이 적용된 파일만 커밋할 수 있게 도와준다.
+# 다시 정리하면<br/>
+## staging에 있는 파일을 npm 으로 다루기 위해서 → lint-staged<br/>
+## git hooks를 npm으로 다루기 위해서 → husky 를 이용한다.<br/>
+## 이 두가지를 조합해서 commit 하기 전에 파일들을 lint 룰이 적용된 파일만 커밋할 수 있게 도와준다.<br/>

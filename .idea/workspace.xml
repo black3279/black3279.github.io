@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="220821">
-      <change afterPath="$PROJECT_DIR$/_posts/2023-01-11-git.md" afterDir="false" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="230111">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2023-01-11-git.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-01-11-git.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,14 +88,9 @@
       <workItem from="1658584503794" duration="5114000" />
       <workItem from="1661004976196" duration="5641000" />
       <workItem from="1667181722013" duration="1065000" />
-      <workItem from="1673445185351" duration="2435000" />
-    </task>
-    <task id="LOCAL-00023" summary="220202">
-      <created>1643810026351</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1643810026351</updated>
+      <workItem from="1673445185351" duration="3461000" />
+      <workItem from="1674451867497" duration="829000" />
+      <workItem from="1674533612648" duration="677000" />
     </task>
     <task id="LOCAL-00024" summary="220206">
       <created>1644077592811</created>
@@ -433,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661010611696</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="230111">
+      <created>1673448178158</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1673448178158</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +465,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test" />
     <MESSAGE value="220101" />
     <MESSAGE value="220106" />
     <MESSAGE value="220112" />
@@ -488,6 +489,7 @@
     <MESSAGE value="220723" />
     <MESSAGE value="220724" />
     <MESSAGE value="220821" />
-    <option name="LAST_COMMIT_MESSAGE" value="220821" />
+    <MESSAGE value="230111" />
+    <option name="LAST_COMMIT_MESSAGE" value="230111" />
   </component>
 </project>

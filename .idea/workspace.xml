@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="230124">
-      <change afterPath="$PROJECT_DIR$/assets/img/Git/gitflow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Git/trunkflow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-11-git.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-01-11-git.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../git" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -93,14 +90,8 @@
       <workItem from="1673445185351" duration="3461000" />
       <workItem from="1674451867497" duration="829000" />
       <workItem from="1674533612648" duration="1398000" />
-      <workItem from="1674565888434" duration="1797000" />
-    </task>
-    <task id="LOCAL-00025" summary="220207">
-      <created>1644167899968</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1644167899968</updated>
+      <workItem from="1674565888434" duration="2046000" />
+      <workItem from="1674738458021" duration="115000" />
     </task>
     <task id="LOCAL-00026" summary="220208">
       <created>1644252479081</created>
@@ -438,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674534410997</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="230124">
+      <created>1674567892936</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1674567892936</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -101,16 +101,16 @@ docker exec -it hashnumber /bin/bash
 - Global Accelerator는 2개의 글로벌 정적 고객용 IP를 제공한다. 트래픽이 도착하는 최종 엔드포인트는 AWS 특정 리전의 ELB(Network Load Balancer 혹은 Application Load Balancer), 탄력적 IP 및 EC2 인스턴스이며, 이를 AWS 애플리케이션 오리진으로 구성하는 방식이다.<br/>
   <br/>
 
-<br/>(Image from https://velog.io/@khyup0629/AWS-Global-Accelerator)![Untitled](/assets/img/Reverse_Proxy/case1.png)<br/>
 * 시나리오1: 단일 리전 내에 존재하는 앱의 성능 개선<br/>
 - 전 세계의 엣지 로케이션(고정 진입점 역할)에 글로벌 정적 애니캐스트 IP 2개(아래 사진 기준: 4.3.2.1, 9.8.7.6) 부여하여 실제 사용자는 이 주소를 통해 자신의 인근 엣지에 접속<br/>
 - 특정 리전에 존재하는 엔드 포인트에 전 세계 사용자가 빠르게 접속<br/>
+  <br/>(Image from https://velog.io/@khyup0629/AWS-Global-Accelerator)![Untitled](/assets/img/Reverse_Proxy/case1.png)<br/>
   <br/>
 
-<br/>(Image from https://velog.io/@khyup0629/AWS-Global-Accelerator)![Untitled](/assets/img/Reverse_Proxy/case2.png)<br/>
 * 시나리오 2: 다중 리전 내에 존재하는 앱의 성능 개선<br/>
 - 전 세계의 엣지 로케이션(고정 진입점 역할)에 글로벌 정적 애니캐스트 IP 2개(아래 사진 기준: 4.3.2.1, 9.8.7.6) 부여하여 실제 사용자는 이 주소를 통해 자신의 인근 엣지에 접속<br/>
 - 최대 10개 AWS 리전으로 접속 가능<br/>
+  <br/>(Image from https://velog.io/@khyup0629/AWS-Global-Accelerator)![Untitled](/assets/img/Reverse_Proxy/case2.png)<br/>
   <br/>
 ### * 장점 (AWS 전용선 사용)<br/>
 1. 성능 개선<br/>

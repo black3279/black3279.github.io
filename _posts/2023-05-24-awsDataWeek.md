@@ -104,3 +104,6 @@ title: AWS Data Week Day 2
 - Redis data structures : String, Hash, List, Set, Sorted Set, Geospatial, HyperLogLog ...
 - ziplist 에서 listpack 으로 오픈소스 레디스 변경사항 있음
 - 특정 빈번한 aggregate 쿼리를 MD5 Hash 를 사용하여 쿼리문 자체를 캐싱해놓고 바로 return 하는 형태로 구현
+- 캐싱의 방법에는 Lazy Loading (Elasticache 질의 후 있으면 사용 없으면 쿼리 후 다시 넣는다)
+  - 캐시에서 불필요한 데이터를 방지할 수 있다
+- Write Through 는 DynamoDB 등에 데이터 트리거링 이벤트로 람다를 걸어서 해당 cache 를 Update 하는 것이다

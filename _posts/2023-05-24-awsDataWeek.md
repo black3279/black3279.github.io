@@ -91,7 +91,7 @@ title: AWS Data Week Day 2
 ## 👨‍🎓 8. AWS Neptune<br/><br/>
 - Graph Data Model : 객체간 관계를 기반으로 연결된 데이터를 그래프 형식으로 저장
 - Property Graph 는 유연성을 초점으로 지원하며 RDF 는 형식을 조금 더 강조하는 형태로 지원되고 있다
-- 따라서 RDF 는 시스템 간 knowlege graph 를 중심으로 Property Graph 는 어플리케이션 관점에서 관리되고 있다
+- 따라서 RDF 는 시스템 간 knowledge graph 를 중심으로 Property Graph 는 어플리케이션 관점에서 관리되고 있다
 - Vertex 와 Edge 기반으로 데이터를 구성
 - SNS 등에서 팔로잉과 팔로워를 연결하고 팔로잉 하는 사람의 친구를 추천해주거나 구매 상품을 추천해주는 등의 관계로도 사용됨
 - 계층적 구조로 되어있는 경우에 활용하기 용이하다
@@ -100,3 +100,7 @@ title: AWS Data Week Day 2
   - 관계 자체를 저장하기 때문에 좀 더 엄격한 스키마를 기반으로 데이터들의 관계를 이해하기 쉽다
 - 오픈서치, SageMaker 등과 데이터 호환이 용이하다
   <br/><br/>
+## 👨‍🎓 9. AWS Elasticache for redis<br/><br/>
+- Redis data structures : String, Hash, List, Set, Sorted Set, Geospatial, HyperLogLog ...
+- ziplist 에서 listpack 으로 오픈소스 레디스 변경사항 있음
+- 특정 빈번한 aggregate 쿼리를 MD5 Hash 를 사용하여 쿼리문 자체를 캐싱해놓고 바로 return 하는 형태로 구현

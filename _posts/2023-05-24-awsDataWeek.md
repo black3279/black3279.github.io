@@ -70,3 +70,33 @@ title: AWS Data Week Day 2
 - 워크로드가 증가하는 경우 해당 클래스 변경했을 때 비용이 더 나올 수 있기 때문에 워크로드에 따른 기준 수립 필요
 - Cost Explorer 참고 가능
 - 대규모 테이블 위주로 반영해보는 것이 좋을 수 있음
+  <br/><br/>
+## 👨‍🎓 7. Document DB<br/><br/>
+- Sharding 이 가능하며 Secondary Index 를 불편하지 않게 사용할 수 있는 Database
+- Document Databases 는 JSON 과 호환이 잘되며 비정규화 데이터 모델로 Schemaless 하여 변경이 용이
+- 하지만 RDBMS 에 비해 IO 가 큰 폭으로 증가할 수 있으며 (1 row 당 46 byte 로 약 3~4 배) DB Buffer 에도 상대적으로 적은 수의 document 가 존재하여 성능상 취약해질 가능성이 크다
+- DocumentStore 의 Modeling Patten 에서 통채로 데이터 모델을 가지고 있는 Embedded Data Model 은 특수한 상황 (같은 도큐먼트에 대해 다른 update 작업이 발생하여 Lock 발생으로 인한 성능 저하 발생 등) 에서 Reference Data Model 을 사용할 수 는 있으나 Document DB 를 사용하는 것이 맞는지 생각해보아야 한다.
+- MongoDB 에서 비정상 종료 시 복구에 사용되는 Journal Checkoint 발생 시 dirty page 를 sync 로 인한 성능 저하가 발생하나 DocumentDB 에서는 이를 IO 성능에 영향을 주지 않게 조정 가능하다
+- Buffer pool (Shared pool) 은 Mongo DB 의 특성 상 OS 에게 Disk IO 를 의뢰하는 구조 상 튜닝포인트로 적합하지 않다
+- Buffer pool 을 정리하는 Eviction 작업을 모니터링하는 것이 좋다
+- Sharding key 를 기준으로 청크 단위로 데이터가 샤드 간 분리되며 mongos 사용 시에는 메모리가 중요하다
+- 샤드 하나 대상으로 하는 Target Query 와 전체를 대상으로 하는 BroadCast Query 를 잘 구분하여 쿼리를 짜야 장애가 발생하지 않는다
+- Task Executor Pool : mongos (cluster) 가 요청하는 샤드 쿼리 요청에 대해 연결되는 connection pool
+- Getmore, Aggregation, count() 등 쿼리에서는 기본 Cursor 가 호출되며 별도의 OS heap 영역을 기본 16mb 기본 할당받는다
+- Large size 의 경우, Centreal Heap 에서 할당받아야 하기 때문에 Spin Lock Wait 이 발생하며 이는 해당 메모리 할당을 위해 대기하고 있는 상태이다
+- 해당 Lock 등에서 대기할 경우 Read & Write Ticket 을 사용한 채로 대기를 하게 되는데 Server 별로 기본 128개씩 이기 때문에 모두 사용하게 될 경우 Ticket 할당이 될때까지 query wait 이 걸린다
+- Aggregation 쿼리 생성 시 $match 를 파이프라인 최상단에 배치하도록 하여 (where 조건절 처럼) 쿼리 튜닝 필요
+- Match 조건에는 반드시 적절한 index 전략이 필요하다
+  <br/><br/>
+## 👨‍🎓 8. AWS Neptune<br/><br/>
+- Graph Data Model : 객체간 관계를 기반으로 연결된 데이터를 그래프 형식으로 저장
+- Property Graph 는 유연성을 초점으로 지원하며 RDF 는 형식을 조금 더 강조하는 형태로 지원되고 있다
+- 따라서 RDF 는 시스템 간 knowlege graph 를 중심으로 Property Graph 는 어플리케이션 관점에서 관리되고 있다
+- Vertex 와 Edge 기반으로 데이터를 구성
+- SNS 등에서 팔로잉과 팔로워를 연결하고 팔로잉 하는 사람의 친구를 추천해주거나 구매 상품을 추천해주는 등의 관계로도 사용됨
+- 계층적 구조로 되어있는 경우에 활용하기 용이하다
+- 그래프 데이터 모델링은 비즈니스 프로세스가 아니라 관계 자체를 저장한다
+  - 즉 RDB 는 관계를 보이지않는 메타데이터의 join 으로 표현하는데에 비해 그래프 DB 는 해당 관계 자체를 저장하기 때문에 효율적으로 찾아갈 수 있다
+  - 관계 자체를 저장하기 때문에 좀 더 엄격한 스키마를 기반으로 데이터들의 관계를 이해하기 쉽다
+- 오픈서치, SageMaker 등과 데이터 호환이 용이하다
+  <br/><br/>

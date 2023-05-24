@@ -107,3 +107,4 @@ title: AWS Data Week Day 2
 - 캐싱의 방법에는 Lazy Loading (Elasticache 질의 후 있으면 사용 없으면 쿼리 후 다시 넣는다)
   - 캐시에서 불필요한 데이터를 방지할 수 있다
 - Write Through 는 DynamoDB 등에 데이터 트리거링 이벤트로 람다를 걸어서 해당 cache 를 Update 하는 것이다
+  - 데이터는 항상 최신이나 불필요할 수 있고 대부분의 데이터가 캐시로 등록되지 않을 수 도 있다

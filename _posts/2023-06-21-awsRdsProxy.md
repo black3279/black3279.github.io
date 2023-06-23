@@ -73,3 +73,15 @@ RDS Proxy는 다른 세션에 적합하지 않은 세션 상태 변경을 감지
 
 ### [성능테스트](https://techblog.lotteon.com/rds-proxy-%EA%B8%B0%EB%8A%A5-%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8-9e1ef6ca6365)
 
+# 👨‍🎓 AWS 페이로드 압축<br/><br/>
+- [페이로드 압축이란](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-gzip-compression-decompression.html)
+- [압축 활성화](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-enable-compression.html)
+- Minimum body size required for compression(압축에 필요한 최소 본문 크기)
+- API Gateway가 지원하는 콘텐츠 코딩
+  - deflate 
+  - gzip 
+  - identity
+- [압축된 페이로드가 포함된 API 메서드 호출](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-make-request-with-compressed-payload.html)
+- [압축된 페이로드가 포함된 API 응답 수신] (https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/api-gateway-receive-response-with-compressed-payload.html)
+
+## 연결 설정 구성<br/>

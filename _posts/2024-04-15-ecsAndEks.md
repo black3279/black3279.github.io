@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bruce Lee
-title: AWS RDS Proxy
+title: AWS ECS And EKS
 ---
 
 # 👨‍🎓 AWS 트러블 슈팅<br/><br/>

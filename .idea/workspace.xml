@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="240718">
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="240721">
+      <change afterPath="$PROJECT_DIR$/_posts/2024-11-04-slurm.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-07-18-terraform.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-07-18-terraform.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,21 +102,10 @@
       <workItem from="1713519287659" duration="642000" />
       <workItem from="1714266627446" duration="34000" />
       <workItem from="1721285352266" duration="4256000" />
-      <workItem from="1721489688515" duration="977000" />
-    </task>
-    <task id="LOCAL-00035" summary="220308">
-      <created>1646746905503</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1646746905503</updated>
-    </task>
-    <task id="LOCAL-00036" summary="220308">
-      <created>1646747217212</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1646747217212</updated>
+      <workItem from="1721489688515" duration="1948000" />
+      <workItem from="1721527357733" duration="85000" />
+      <workItem from="1727225120485" duration="3526000" />
+      <workItem from="1730703289208" duration="2358000" />
     </task>
     <task id="LOCAL-00037" summary="220308">
       <created>1646747462579</created>
@@ -447,7 +436,21 @@
       <option name="project" value="LOCAL" />
       <updated>1721288348905</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="240721">
+      <created>1721490837649</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1721490837649</updated>
+    </task>
+    <task id="LOCAL-00085" summary="240721">
+      <created>1721491039448</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1721491039448</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="220114" />
     <MESSAGE value="220131" />
     <MESSAGE value="220202" />
     <MESSAGE value="220206" />
@@ -502,6 +504,7 @@
     <MESSAGE value="240415" />
     <MESSAGE value="240419" />
     <MESSAGE value="240718" />
-    <option name="LAST_COMMIT_MESSAGE" value="240718" />
+    <MESSAGE value="240721" />
+    <option name="LAST_COMMIT_MESSAGE" value="240721" />
   </component>
 </project>

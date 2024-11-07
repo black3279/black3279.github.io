@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="241105">
+      <change afterPath="$PROJECT_DIR$/_posts/2024-11-07-ansible.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-11-04-slurm.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-11-04-slurm.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +107,7 @@
       <workItem from="1727225120485" duration="3526000" />
       <workItem from="1730703289208" duration="3731000" />
       <workItem from="1730791497295" duration="3485000" />
-      <workItem from="1730964568923" duration="119000" />
-    </task>
-    <task id="LOCAL-00042" summary="220309">
-      <created>1646804928809</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1646804928809</updated>
+      <workItem from="1730964568923" duration="1719000" />
     </task>
     <task id="LOCAL-00043" summary="220309">
       <created>1646805307745</created>
@@ -452,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730794993706</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="241105">
+      <created>1730964714833</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1730964714834</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

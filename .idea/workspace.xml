@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="분석 내용 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2025-06-22-SaaS.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2025-06-22-SaaS.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,14 +112,7 @@
       <workItem from="1731302466820" duration="4996000" />
       <workItem from="1731567278084" duration="3859000" />
       <workItem from="1750567357838" duration="1719000" />
-      <workItem from="1754021729013" duration="3112000" />
-    </task>
-    <task id="LOCAL-00055" summary="220611">
-      <created>1654949978881</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1654949978881</updated>
+      <workItem from="1754021729013" duration="3673000" />
     </task>
     <task id="LOCAL-00056" summary="220611">
       <created>1654952999415</created>
@@ -456,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1754025813730</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="분석 내용 수정">
+      <created>1754026036862</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1754026036862</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

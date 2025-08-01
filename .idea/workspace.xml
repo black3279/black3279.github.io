@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="241114">
-      <change afterPath="$PROJECT_DIR$/_posts/2025-06-22-SaaS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Queue_Gateway/APIGW_Landscape.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Queue_Gateway/APISIX.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Queue_Gateway/ENVOY.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Queue_Gateway/KONG.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Queue_Gateway/NATS.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Queue_Gateway/Queue_Landscape.PNG" afterDir="false" />
+    <list default="true" id="c9fd8f50-c813-43ee-8ac3-d1a2c0348a6c" name="Changes" comment="250622">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-06-22-SaaS.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2025-06-22-SaaS.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +111,8 @@
       <workItem from="1731052166116" duration="1401000" />
       <workItem from="1731302466820" duration="4996000" />
       <workItem from="1731567278084" duration="3859000" />
-      <workItem from="1750567357838" duration="1319000" />
-    </task>
-    <task id="LOCAL-00053" summary="220421">
-      <created>1650499425490</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1650499425490</updated>
+      <workItem from="1750567357838" duration="1719000" />
+      <workItem from="1754021729013" duration="2752000" />
     </task>
     <task id="LOCAL-00054" summary="220424">
       <created>1650761840671</created>
@@ -463,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1731569969736</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="250622">
+      <created>1750568967080</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1750568967081</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +487,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="220211" />
     <MESSAGE value="220213" />
     <MESSAGE value="220308" />
     <MESSAGE value="220309" />
@@ -518,6 +511,7 @@
     <MESSAGE value="241108" />
     <MESSAGE value="241111" />
     <MESSAGE value="241114" />
-    <option name="LAST_COMMIT_MESSAGE" value="241114" />
+    <MESSAGE value="250622" />
+    <option name="LAST_COMMIT_MESSAGE" value="250622" />
   </component>
 </project>
